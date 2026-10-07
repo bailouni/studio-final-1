@@ -1,0 +1,27 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Services — Rayan Studios</title><link rel="stylesheet" href="style.css"><style id="mobile-menu-styles">
+.mobile-menu-btn,.mobile-menu-panel{display:none}
+@media(max-width:800px){
+.nav>.cta{display:none!important}.navlinks{display:none!important}
+.mobile-menu-btn{display:flex;align-items:center;gap:9px;background:transparent;border:1px solid #d9c9ae;color:#ece8df;padding:10px 12px;font:inherit;font-size:9px;letter-spacing:.16em;text-transform:uppercase}
+.mobile-menu-btn .bars{width:15px;height:10px;position:relative;display:block}
+.mobile-menu-btn .bars:before,.mobile-menu-btn .bars:after{content:"";position:absolute;left:0;width:15px;height:1px;background:#ece8df}
+.mobile-menu-btn .bars:before{top:1px}.mobile-menu-btn .bars:after{bottom:1px}
+.mobile-menu-panel{display:flex;position:fixed;z-index:29;inset:66px 0 0;background:#0a0a09;padding:42px 6vw 34px;flex-direction:column;opacity:0;visibility:hidden;transform:translateY(-8px);transition:.25s ease;overflow:auto}
+body.mobile-menu-open{overflow:hidden}body.mobile-menu-open .mobile-menu-panel{opacity:1;visibility:visible;transform:none}
+.mobile-menu-panel a{color:#ece8df;text-decoration:none;text-transform:uppercase;font-size:clamp(28px,9vw,46px);letter-spacing:-.025em;line-height:1.15;padding:13px 0;border-bottom:1px solid #ffffff18}
+.mobile-menu-panel a.active{color:#b79262}
+.mobile-menu-panel .mobile-book,.mobile-menu-panel .mobile-whatsapp{margin-top:20px;border:1px solid #b79262;padding:15px 16px;font-size:10px;letter-spacing:.16em;line-height:1.2;text-align:center}
+.mobile-menu-panel .mobile-whatsapp{margin-top:10px}
+}</style></head><body><header class="nav"><a class="logo" href="index.html">RAYAN<span>STUDIOS</span></a><nav class="navlinks"><a class="" href="index.html">Home</a><a class="" href="studio.html">Studio</a><a class="active" href="services.html">Services</a><a class="" href="gallery.html">Gallery</a><a class="" href="contact.html">Contact</a></nav><a class="cta" href="booking.html">BOOK A SESSION</a><button class="mobile-menu-btn" type="button" aria-label="Open menu" aria-expanded="false"><span>MENU</span><span class="bars"></span></button></header>
+<div class="mobile-menu-panel" aria-hidden="true"><a href="index.html">Home</a><a href="studio.html">Studio</a><a href="services.html">Services</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a><a class="mobile-book" href="booking.html">Book a Session ↗</a><a class="mobile-whatsapp" href="https://wa.me/971553351634" target="_blank" rel="noopener">Contact us on WhatsApp ↗</a></div>
+<section class="pagehero" style="background-image:url('assets/p04.jpeg')"><div><div class="eyebrow">SERVICES</div><h1>FROM IDEA<br>TO <i>RECORD.</i></h1><p>Book a focused session or bring us into the full creative process.</p></div></section>
+<section class="editorial">
+<div class="service"><span>01</span><h3>VOCAL RECORDING</h3><p>3-hour recording sessions with engineering, vocal direction and access to the studio's vocal chains.</p></div>
+<div class="service"><span>02</span><h3>INSTRUMENT TRACKING</h3><p>Guitars, bass, keys and other instruments tracked through selected microphones, preamps and analog processing.</p></div>
+<div class="service"><span>03</span><h3>SONGWRITING</h3><p>Topline, lyrics, melody and creative direction built around the artist and the record.</p></div>
+<div class="service"><span>04</span><h3>PRODUCTION</h3><p>Beat creation, arrangement, sound design and production sessions — or complete production from demo to finished record.</p></div>
+<div class="service"><span>05</span><h3>MIXING & MASTERING</h3><p>Hybrid mixing and final polish for release, with scope based on the project and deliverables.</p></div>
+<div class="service"><span>06</span><h3>COMMERCIAL AUDIO</h3><p>Original music, recording and production support for brands, advertising, content, film and agency work.</p></div>
+</section>
+<section class="tease light"><div class="photo" style="background-image:url('assets/p12.jpeg')"></div><div class="words"><div class="sectionno">CUSTOM PROJECT?</div><h2>Tell us what<br><i>you're making.</i></h2><p class="copy">Larger productions, artist projects and commercial work are quoted around creative scope, scheduling and deliverables.</p><a class="cta" style="color:#111;border-color:#111;align-self:flex-start" href="contact.html">START AN ENQUIRY</a></div></section>
+<footer><div>RAYAN STUDIOS</div><span>© 2026 RAYAN PRODUCER STUDIOS LLC · DUBAI</span><a href="https://instagram.com/rayanstudios.ae">@RAYANSTUDIOS.AE</a></footer><script id="mobile-menu-script">(function(){const b=document.querySelector('.mobile-menu-btn'),p=document.querySelector('.mobile-menu-panel');if(!b||!p)return;const f=location.pathname.split('/').pop()||'index.html';p.querySelectorAll('a').forEach(a=>{if(a.getAttribute('href')===f&&!a.classList.contains('mobile-book'))a.classList.add('active')});function s(o){document.body.classList.toggle('mobile-menu-open',o);b.setAttribute('aria-expanded',String(o));p.setAttribute('aria-hidden',String(!o));b.querySelector('span:first-child').textContent=o?'CLOSE':'MENU'}b.onclick=()=>s(!document.body.classList.contains('mobile-menu-open'));p.querySelectorAll('a').forEach(a=>a.onclick=()=>s(false))})();</script></body></html>
